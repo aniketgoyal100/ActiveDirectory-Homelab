@@ -29,7 +29,11 @@ This project simulates a real-world enterprise IT environment using Microsoft Az
 
 ## Screenshots
 
-- Active Directory Users and Computers (OUs and accounts)  
+- Active Directory Users and Admins
+![admin users](powershellusers.png)
+![student accounts](studentusers.png)
+![staff users](staffusers.png)
+
 - Client1 joined to lab.local  
 - Successful RDP login as lab\jdoe  
 - Group Policy wallpaper applied  
