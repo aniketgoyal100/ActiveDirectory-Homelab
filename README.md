@@ -53,8 +53,8 @@ Throughout this project I faced many issues which I learned to troublehoot and o
 ![login](images/testuserlogin.png)
 
 #### - Group Policy wallpaper applied
-![gpo settings](images/mandaatorywallpaper.png)
-![wallpaper](images/wallpaper.png)
+![gpo settings](images/mandatorywallpaper.png)
+![wallpaper](images/manwallpaper.png)
 
 ## Outcome
 This homelab successfully simulates a managed IT infrastructure where domain users and systems are controlled through centralized policies and services. The setup demonstrates core enterprise administration skills, including Active Directory, DHCP, DNS, and Group Policy management.
