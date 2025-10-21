@@ -27,18 +27,35 @@ This project simulates a real-world enterprise IT environment using Microsoft Az
 - Applied a Group Policy Object (GPO) to enforce a mandatory wallpaper  
 - Verified RDP access for all domain users  
 
+## What I learned
+
+Throughout this project I faced many issues which I learned to troublehoot and overcome. One key issue that I faced was that because my Mac runs on Apple Silicon, VMware was incompatible with x86 Windows Server ISOs. To overcome this, I migrated my entire Active Directory deployment to Microsoft Azure, where I configured a virtual network, attached a static private IP to the domain controller, and created a public IP for remote access. During setup, I resolved DHCP scope conflicts by redesigning the network from 10.0.0.0 to 172.16.0.0/24 and verified connectivity through DNS resolution and domain joins. These challenges strengthened my understanding of cloud networking, IP management, and domain integration—skills essential for modern IT infrastructure and systems administration.
+
 ## Screenshots
 
-- Active Directory Users and Admins
+#### - Azure Portal
+![azure](images/azureportal.png)
+
+#### - Active Directory Users and Admins
 ![admin users](images/powershellusers.png)
 ![student accounts](images/studentusers.png)
 ![staff users](images/staffusers.png)
 
-- Client1 joined to lab.local  
-- Successful RDP login as lab\jdoe  
-- Group Policy wallpaper applied  
+#### - DHCP 
+![scope](scope.png)
+![dhcp scope](dhcpscope.png)
+
+#### - Client1 joined to lab.local
+![client1](images/client1.png)
+![client1join](images/client1joinlab.local.png)
+
+#### - Successful RDP login as lab\jdoe 
+![login](images/testuserlogin.png)
+
+#### - Group Policy wallpaper applied
+![gpo settings](images/mandaatorywallpaper.png)
+![wallpaper](images/wallpaper.png)
 
 ## Outcome
 This homelab successfully simulates a managed IT infrastructure where domain users and systems are controlled through centralized policies and services. The setup demonstrates core enterprise administration skills, including Active Directory, DHCP, DNS, and Group Policy management.
 
-[Detailed Setup Guide (Coming Soon)](./DetailedSetup.md)
